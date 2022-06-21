@@ -5,7 +5,11 @@
 	--clr-headings: #1b0760;
 	--clr-body: #918ca4;
 }
-
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
 /* =================================== */
 /* ============ typography =========== */
 /* =================================== */
@@ -151,4 +155,57 @@ a {
 	height: 64px;
 	border-radius: 100%;
 	background: #f3f9fa;
+}
+/*============== icons ===========*/
+.btn {
+	font-size: 1.8rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-align: center;
+	margin-block: 1rem;
+	padding: 2rem 3rem;
+	border: 0;
+	border-radius: 40px;
+	cursor: pointer;
+	white-space: nowrap;
+}
+
+.btn--primary {
+	background: var(--clr-primary);
+	color: #fff;
+}
+.btn--primary:hover {
+	background: #3a8ffd;
+}
+.btn--secondary {
+	background: var(--clr-secondary);
+	color: #fff;
+}
+.btn--secondary:hover {
+	background: #00c8eb;
+}
+.btn--accent {
+	background: var(--clr-accent);
+	color: #fff;
+}
+.btn--accent:hover {
+	background: #ec3000;
+}
+.btn--outline {
+	background: transparent;
+	color: var(--clr-headings);
+	border: 2px solid var(--clr-headings);
+}
+.btn--outline:hover {
+	background: var(--clr-headings);
+	color: #fff;
+}
+.btn--block {
+	width: 100%;
+	display: inline-block;
+}
+@media screen and (min-width: 1024px) {
+	.btn {
+		font-size: 1.5rem;
+	}
 }
