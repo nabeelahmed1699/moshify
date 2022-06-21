@@ -4,6 +4,8 @@
 	--clr-accent: #ff3400;
 	--clr-headings: #1b0760;
 	--clr-body: #918ca4;
+	--clr-border: #ccc;
+	--border-radius: 30px;
 }
 *,
 *::after,
@@ -156,7 +158,7 @@ a {
 	border-radius: 100%;
 	background: #f3f9fa;
 }
-/*============== icons ===========*/
+/*============== buttons ===========*/
 .btn {
 	font-size: 1.8rem;
 	font-weight: 600;
@@ -208,4 +210,35 @@ a {
 	.btn {
 		font-size: 1.5rem;
 	}
+}
+/*============== buttons ===========*/
+.input {
+	border-radius: var(--border-radius);
+	border: 1px solid var(--clr-border);
+	color: var(--clr-headings);
+	font-size: 2rem;
+	outline: 0;
+	padding: 1.5rem 3rem;
+}
+::placeholder {
+	color: #cdcbc7;
+}
+
+@media screen and (min-width: 1024px) {
+	.input {
+		font-size: 1.5rem;
+	}
+}
+.input-group {
+	border: 1px solid var(--clr-border);
+	border-radius: var(--border-radius);
+	display: flex;
+}
+.input-group .input {
+	border: 0;
+	flex-grow: 1;
+	padding-inline: 1rem;
+}
+.input-group .btn {
+	margin-block: 4px;
 }
