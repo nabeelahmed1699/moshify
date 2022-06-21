@@ -1,6 +1,6 @@
 :root {
 	--clr-primary: #2584ff;
-	--clr-secndary: #00d9ff;
+	--clr-secondary: #00d9ff;
 	--clr-accent: #ff3400;
 	--clr-headings: #1b0760;
 	--clr-body: #918ca4;
@@ -93,7 +93,7 @@ a {
 }
 
 .badge--secondary {
-	background: var(--clr-secndary);
+	background: var(--clr-secondary);
 	color: #fff;
 }
 .badge--small {
@@ -134,4 +134,21 @@ a {
 	.list--tick .list__item {
 		padding-left: 0;
 	}
+}
+/*============== icons ===========*/
+.icon {
+	width: 40px;
+	height: 40px;
+}
+.icon--primary {
+	fill: var(--clr-primary);
+}
+.icon-container {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 64px;
+	height: 64px;
+	border-radius: 100%;
+	background: #f3f9fa;
 }
