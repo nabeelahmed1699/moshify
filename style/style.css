@@ -214,6 +214,9 @@ a {
 	background: var(--clr-headings);
 	color: #fff;
 }
+.btn--stretched {
+	padding-inline: 6rem;
+}
 .btn--block {
 	width: 100%;
 	display: inline-block;
@@ -392,7 +395,7 @@ a {
 	}
 }
 
-/* Testimonial */
+/*============== Testimonial ===========*/
 .testimonial {
 	padding: 3rem;
 }
@@ -415,5 +418,39 @@ a {
 	}
 	.testimonial .quote {
 		margin-left: 6rem;
+	}
+}
+/*============== Callouts ===========*/
+.callout {
+	padding: 4rem;
+	border-radius: 5px;
+}
+
+.callout--primary {
+	background: var(--clr-primary);
+	color: #fff;
+}
+.callout__heading {
+	color: #fff;
+	margin-top: 0;
+	font-size: 3rem;
+}
+.callout .btn {
+	align-self: center;
+	justify-self: center;
+}
+.callout__content {
+	text-align: center;
+}
+@media screen and (min-width: 768px) {
+	.callout .grid--1x2 {
+		grid-template-columns: 1fr auto;
+	}
+	.callout__content {
+		text-align: left;
+	}
+	.callout .btn {
+		justify-self: start;
+		margin-inline: 2rem;
 	}
 }
