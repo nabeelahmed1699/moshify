@@ -543,6 +543,7 @@ a {
 }
 .block__header {
 	text-align: center;
+	margin-bottom: 4rem;
 }
 
 /*============== Navigation ===========*/
