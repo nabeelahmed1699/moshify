@@ -640,3 +640,23 @@ a {
 	max-width: 450px;
 	margin-inline: auto;
 }
+
+/* =============== features ============= */
+.feature__heading {
+	margin: 1rem 0;
+}
+.feature {
+	gap: 4rem 2rem;
+	margin-block: 12rem;
+}
+.feature:first-of-type {
+	margin-top: 6rem;
+}
+.feature__image {
+	width: 100%;
+}
+@media screen and (min-width: 768px) {
+	.feature:nth-child(even) .feature__content {
+		order: 2;
+	}
+}
