@@ -456,7 +456,7 @@ a {
 }
 /*============== Callouts ===========*/
 .callout-container {
-	transform: translateY(25%);
+	transform: translateY(5rem);
 }
 .callout {
 	padding: 4rem;
