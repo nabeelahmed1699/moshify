@@ -26,7 +26,7 @@ html {
 }
 body {
 	font-family: 'Inter', Arial, Helvetica, sans-serif;
-	font-size: 2.4rem;
+	font-size: 2rem;
 	line-height: 1.5;
 	color: var(--clr-body);
 }
@@ -270,6 +270,7 @@ a {
 	border: 0;
 	flex-grow: 1;
 	padding: 1.5rem 2rem;
+	width: 0;
 }
 .input-group .btn {
 	margin: 4px;
@@ -454,6 +455,9 @@ a {
 	}
 }
 /*============== Callouts ===========*/
+.callout-container {
+	transform: translateY(25%);
+}
 .callout {
 	padding: 4rem;
 	border-radius: 5px;
@@ -487,7 +491,7 @@ a {
 		margin-inline: 2rem;
 	}
 }
-/*============== Callouts ===========*/
+/*============== collapsible ===========*/
 
 .collapsible__header {
 	display: flex;
@@ -635,6 +639,9 @@ a {
 	max-width: 72.2rem;
 	margin: auto;
 }
+.block-domain__prices li {
+	color: var(--clr-headings);
+}
 @media screen and (min-width: 768px) {
 	.block-domain__prices {
 		grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
@@ -685,6 +692,10 @@ a {
 	}
 }
 /*============== footer ===========*/
+.footer {
+	background: #232323;
+	padding-top: 10rem;
+}
 .footer__section {
 	padding: 4rem;
 	border-bottom: 1px solid #393939;
